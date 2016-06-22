@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Black+Ops+One);
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    background: url(back.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    /* pour anciens Chrome et Safari */
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
+h1 {
+    margin-top: 210px;
+    text-align: center;
+}
+#date {
+    text-align: center;
+}
+#heure {
+    width: 70%;
+    height: 120px;
+    font-family: 'Black Ops One', cursive;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 4.8em;
+    border-radius: 20px;
+    padding: 0 10px 0 10px;
+    background-color: rgba(243, 245, 246, 0.8);
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.5)
+}
+span {
+    padding: 25px;
+    margin: 0 5px;
+    display: inline-block;
+    width: 75px;
+}
+#date {
+    font-weight: 600;
+    font-size: 2.2em;
+}
+@media screen and (max-device-width: 480px) {
+    body {
+        width: 100%;
+        height: auto;
+        background: url(backpetit.jpg) no-repeat center fixed;
+        background-color: #979795;
+    }
+    #heure {
+        width: 75%;
+        height: 90px;
+        font-size: 2.5em;
+    }
+    span {
+        padding: 5px;
+        margin: 0 5px;
+        display: inline-block;
+        width: 45px;
+    }
+    #date {
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+}
+@media (orientation: landscape) and (max-device-width: 768px) {
+    html, body {
+        -webkit-text-size-adjust: 100%;
+    }
+    h1 {
+        margin-top: 45px;
+    }
+    #heure {
+        width: 45%;
+        height: 50px;
+        font-size: 1.9em;
+    }
+    span {
+        padding: 5px;
+        margin: 5px;
+        display: inline-block;
+        width: 35px;
+    }
+    #date {
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+}
